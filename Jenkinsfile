@@ -2,7 +2,7 @@ node {
     // Change DOCKER_REPO to use the docker repository where build artifacts
     // will be pushed. If you are using Docker Hub, this would look like:
     // your-username/sample-service
-    def DOCKER_REPO = 'opsani/sample-service'
+    def DOCKER_REPO = 'pavanshivanand/sample-service'
     def version     = ''
     def img         = ''
 
