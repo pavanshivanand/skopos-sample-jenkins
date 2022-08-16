@@ -30,7 +30,7 @@ node {
         // if the version of the service changed.
         // Note:  change the address in the -bind parameter to be the address where
         // Skopos can be reached.
-        sh "/skopos/bin/skopos run -project ${JOB_NAME} -wait -bind 172.17.0.1:8100 --replace-all -env env.yaml -env env-build.yaml model.yaml"
+        sh "/skopos/bin/skopos run -project ${JOB_NAME} -wait -bind 192.168.1.40:8100 --replace-all -env env.yaml -env env-build.yaml model.yaml"
     }
 
     // Optionally, run tests against the deployed app
