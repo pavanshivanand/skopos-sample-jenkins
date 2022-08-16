@@ -13,7 +13,7 @@ node {
     }
 
     stage('publish') {
-        docker.withRegistry('https://index.docker.io/v1/', 'sample-docker-registry-id') {
+        docker.withRegistry('https://index.docker.io/v1/', 'dockerhub') {
             img.push("${version}")
         }
     }
